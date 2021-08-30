@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../styles/main.css" rel="stylesheet" />
+    <link href="../css/estilos.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"/>
+    <link rel="stylesheet" href="dist/css/bootstrap.css" />
+    <title>Document</title>
+  </head>
+
+  <body onload="getCookies()">
+    
+    <header>
+      <nav class="navbar navbar-light">
+        <div class="container">
+          <div class="borderTop_img"></div>
+          <div class="borderLower_img"></div>
+          <img src="../images/logoDepilive.png" alt="" class="logoTop" />
+        </div>
+
+        <div id="alert" class="alert alert-danger" role="alert">
+          <strong style="font-family: Poppins">Bienvenido a nuestra pagina</strong>
+        </div>
+
+        <div class="containerNav">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: #ffffff">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: #ffffff">Servicios </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: #ffffff">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: #ffffff">Portal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: #ffffff">Nosotros</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="imageBg">
+        <img src="../images/imageBg.jpg" class="imageBg" alt="" />
+      </div>
+
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="titleJumbotron">
+            <span style="color: #ed2560" class="display-8">Trabajamos <span style="color: rgb(31, 26, 26)">para tu </span></span>
+          </h1>
+          <h1 class="titleJumbotron mb-3">
+            <span style="color: rgb(31, 26, 26)" class="display-8">salud y tu<span style="color: #ed2561e1; font-size: 35px"><b> Belleza</b></span></span>
+          </h1>
+          <p class="paragraphJumbotron" style="font-size: 16px">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+            convallis ultric vehicula. Fusce tortor leo, laoreet id sapi.
+          </p>
+        </div>
+      </div>
+
+      <div class="containerServices">
+        <h1 class="titleServices">Nuestros Servicios</h1>
+        <div class="circleDecorations"></div>
+        <p class="paragraphServices">
+          Conoce nuestros servicios de depilacion laser corporal y facial;
+          fotorejuvenecimiento, limpieza <br />
+          facial y masajes corporales
+        </p>
+      </div>
+
+      <div class="containerServicesCard px-5">
+        <div class="row gx-5">
+          <div class="col">
+            <div class="p-3 borderCard" onmouseover="controlBtn('btn')">
+              <img src="../images/imgCard1.jpg" alt="" width="304px" height="270px" class="mb-4"/>
+              <h3 class="mb-4"style="font-size: medium; font-weight: bolder; font-size: 18px">Limpieza Facial</h3>
+              <p class="paragraphCard">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Assumenda quibusdam quos molestiae atque, unde
+              </p>
+              <button style="color: #ffffff" id="btn" class="btn btn-primary" type="button" disabled>Ver mas</button>
+            </div>
+          </div>
+          
+          <div class="col">
+            <div class="p-3 borderCard" onmouseover="controlBtn('btn2')">
+              <img src="../images/imgCard2.jpg" alt="" width="304px" height="270px" class="mb-4"/>
+              <h3 class="mb-4" style="font-size: medium; font-weight: bolder; font-size: 18px">Fotorejuvenecimiento Facial
+              </h3>
+              <p class="paragraphCard">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Assumenda quibusdam quos molestiae atque, unde
+              </p>
+              <button style="color: #ffffff" id="btn2" type="button" class="btn btn-primary" disabled>Ver mas</button>
+            </div>
+          </div>
+          
+          <div class="col">
+            <div class="p-3 borderCard" onmouseover="controlBtn('btn3')">
+              <img src="../images/imgCard3.jpg" alt="" width="304px" height="270px" class="mb-4"/>
+              <h3 class="mb-4" style="font-size: medium; font-weight: bolder; font-size: 18px">Masajes Corporales</h3>
+              <p class="paragraphCard">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Assumenda quibusdam quos molestiae atque, unde
+              </p>
+              <button style="color: #ffffff" id="btn3" type="button" class="btn btn-primary" disabled>Ver mas</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="squareDecorations"></div>
+    </main>
+    
+    <footer>
+      <div class="endNavbar">
+        <div id="containerFinalLogo">
+          <div class="row-sm">
+            <div class="col-sm">
+              <img class="finalLogo" src="../images/logo2.jpg" alt="" width="126px" height="86px"/>
+            </div>
+          </div>
+        </div>
+
+        <div id="containerPolicy" class="">
+          <div class="row">
+            <div class="col-sm">
+              <p class="textFooter">
+                <span style="font-weight: 600; line-height: 50px; font-size: 17px" >Nosotros</span><br /> ¿Quienes somos? <br />Contactanos
+              </p>
+            </div>
+            <div class="col-sm">
+              <p class="textFooter"> 
+                  <span style="font-weight: 600; line-height: 50px; font-size: 17px">Politicas</span> <br />Terminos y condiciones <br />Politicas de privacidad
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="containerNetworks">
+          <div class="row-sm">
+            <div class="col-sm">
+              <p class="textFooter">
+                   <span style="font-weight: 600; line-height: 50px; font-size: 17px"> Siguenos</span>
+              </p>
+              <img src="../images/logoFacebook.jpg" class="logoNetworks" />
+              <img src="../images/logoInstagram.jpg" class="logoNetworks" />
+              <img src="../images/logoTwitter.jpg" class="logoNetworks" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="finalPadding"></div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="/libs/bootstrap/bootstrap-5.1.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </body>
+</html>
